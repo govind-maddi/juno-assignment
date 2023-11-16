@@ -1,0 +1,58 @@
+#table_cont{
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.table > section{
+    display: grid;
+    grid-template-columns: 300px 150px 150px 150px 150px 180px;
+    grid-template-rows: 60px;
+}
+.tablecell{
+    display: flex;
+    height: 60px;
+    font-size: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom: 1px var(--stroke) solid;
+    font-weight: 600;
+}
+
+.headercell{
+    background-color: var(--bgcolor);
+    font-weight: 600;
+    font-size: 13px;
+    position: relative;
+}
+.up{
+    position: absolute;
+    right: 36px;
+    top: 12px;
+    cursor: pointer;
+
+}
+.down{
+    position: absolute;
+    right: 36px;
+    bottom: 12px;
+    cursor: pointer;
+}
+.up1{
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    cursor: pointer;
+
+}
+.down1{
+    position: absolute;
+    right: 20px;
+    bottom: 12px;
+    cursor: pointer;
+}

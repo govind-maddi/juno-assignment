@@ -1,0 +1,56 @@
+[
+    {
+        "username":"Sam Altman",
+        "email":"samaltman123@gmail.com",
+        "risk_level":"Medium",
+        "action_reason":"Flagged",
+        "time_to_close":"14 days",
+        "date_added_on":"12 Oct,2023",
+        "action_taken_by":["Neil","neil@onjuno.com"]
+    },
+    {
+        "username":"Sameer Choubey",
+        "email":"sameerchoubey123@gmail.com",
+        "risk_level":"High",
+        "action_reason":"Closed",
+        "time_to_close":"14 days",
+        "date_added_on":"12 Oct,2023",
+        "action_taken_by":["Pratik","pratik@onjuno.com"]
+    },
+    {
+        "username":"Adarsh Panikkar",
+        "email":"adarsh@onjuno.com",
+        "risk_level":"Low",
+        "action_reason":"Cleared",
+        "time_to_close":"15 days",
+        "date_added_on":"12 Oct,2023",
+        "action_taken_by":["No"]
+    },
+    {
+        "username":"Pratik Shetty",
+        "email":"pratik3@gmail.com",
+        "risk_level":"High",
+        "action_reason":"Hard Flag",
+        "time_to_close":"5 days",
+        "date_added_on":"12 Oct,2023",
+        "action_taken_by":["Yes","12 Sep,2023"]
+    },
+    {
+        "username":"Elon Musk",
+        "email":"elon@twitterceo.com",
+        "risk_level":"Low",
+        "action_reason":"Reviewed",
+        "time_to_close":"5 days",
+        "date_added_on":"12 Oct,2023",
+        "action_taken_by":["Yes","12 Sep,2023"]
+    },
+    {
+        "username":"Trina Kundu",
+        "email":"trina@onjuno.com",
+        "risk_level":"Low",
+        "action_reason":"Hard Flag",
+        "time_to_close":"5 days",
+        "date_added_on":"12 Oct,2023",
+        "action_taken_by":["Yes","12 Sep 2023"]
+    }
+]

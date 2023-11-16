@@ -1,0 +1,13 @@
+#4643EE 10%
+
+filter buttons, table headers:#F5F5F5
+
+medium #88670F high #7D2424 low #006540
+
+close btn:#D13B3B
+
+close btn bg:hsba(0, 12%, 96%, 1)
+
+table row stroke:#E4E4E4
+
+content:#050505

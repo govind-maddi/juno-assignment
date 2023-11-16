@@ -1,0 +1,20 @@
+html{
+  font-size: 16px;
+}
+:root{
+  --theme: #4643EE;
+  --themelight: rgba(70, 67, 238, 0.336);
+  --contentprimary: #050505;
+  --contentsecondary:#777676;
+  --stroke:#E5E5E5;
+  --bgcolor:#F5F5F5;
+  --red:#D13B3B;
+
+}
+*{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0; 
+}

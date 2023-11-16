@@ -1,0 +1,13 @@
+#layout_grid_cont{
+    display: grid;
+    grid-template-columns: 220px auto;
+    grid-template-rows: 125px auto;
+    column-gap: 20px;
+}
+
+@media screen and ( max-width: 768px ) {
+    #layout_grid_cont{
+        display: flex;
+        flex-direction: column;
+    }
+}
