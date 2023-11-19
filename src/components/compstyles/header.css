@@ -85,6 +85,10 @@
     top: 50%;
     transform: translate(-50%,-50%);
     border-radius: 20px;
+    color: #050505;
+}
+#dialog_box > header{
+    color: #050505;
 }
 #closeicondialog{
     width: 20px;
@@ -109,6 +113,7 @@
 #fileuar > article{
     font-size: 12px;
     margin-right: 40px;
+    color: #050505;
 }
 #fileuar > article > label{
     margin-right: 10px;
@@ -137,6 +142,7 @@
 #radiocharge > label{
     font-size: 14px;
     margin-left: 5px;
+    color: #050505;
 }
 #dialogbtn{
     border: none;
@@ -148,7 +154,7 @@
 }
 .labels{
     font-size: 14px;
-    color: var(--contentsecondary);
+    color: #777676;
     margin-bottom: 5px;
 }
 @media screen and ( max-width: 768px ) {

@@ -1,6 +1,9 @@
 html{
   font-size: 16px;
 }
+body{
+  background-color: var(--bgcolor);
+}
 :root{
   --theme: #4643EE;
   --themelight: rgba(70, 67, 238, 0.336);
@@ -9,12 +12,38 @@ html{
   --stroke:#E5E5E5;
   --bgcolor:#F5F5F5;
   --red:#D13B3B;
+  
 
+  --contentprimarydark: #f5f5f5;
+  --contentsecondarydark: #c9c1c1;
 }
 *{
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  color: var(--contentprimary); 
+}
+#mode_cont{
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  background-color: var(--stroke);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mode_cont > svg{
+  width: 25px;
+  height: 25px;
+}
+@media screen and (max-width:768px) {
+  #mode_cont{
+    top: 80px;
+  }
 }

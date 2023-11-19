@@ -14,10 +14,15 @@ li{
     width: 300px;
     position: relative;
 }
+#input_search_icon{
+    position: absolute;
+    top: 5px;
+    left: 6px;
+}
 #search_cont > input{
     width: 100%;
     box-sizing: border-box;
-    padding: 5px 0;
+    padding: 5px 0 5px 30px;
     font-size: 16px;
     color: var(--contentprimary);
     outline: none;
