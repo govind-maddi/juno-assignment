@@ -1,12 +1,15 @@
 #table_cont{
     position: relative;
-    width: 100%;
+    max-width: max-content;
     overflow-x: auto;
+    width: calc(100vw - 250px);
+    border: 1px var(--stroke) solid;
 }
 .table{
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 100%;
+    overflow-y: clip;
 }
 .table > section{
     display: grid;
@@ -55,4 +58,9 @@
     right: 20px;
     bottom: 12px;
     cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    #table_cont{
+        width: 100%;
+    }
 }

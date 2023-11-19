@@ -22,7 +22,7 @@ function Layout() {
   const [layout,setLayout] = useState(false);
 
   return (
-    <div id='layout_grid_cont'>
+    <div id='layout_grid_cont' className={ layout ? 'layout_grid2' : 'layout_grid1' }/* ' layout_grid2' */>
       <PendingTab.Provider value={tab1}>
         <SetPendingTab.Provider value={setTab1}>
 

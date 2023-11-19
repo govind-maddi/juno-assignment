@@ -3,6 +3,25 @@
     grid-template-columns: 220px auto;
     grid-template-rows: 125px auto;
     column-gap: 20px;
+
+}
+.layout_grid1::after{
+    content: none;
+    width: 99%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+.layout_grid2::after{
+    content: '';
+    width: 99%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    position: fixed;
 }
 
 @media screen and ( max-width: 768px ) {

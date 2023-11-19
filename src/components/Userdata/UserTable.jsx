@@ -261,10 +261,12 @@ const ascCompletedSortDate = () => {
       if(risk === 'All')
       {
           setfilterTable(pendingTable);
+          setFilterCompTable(completedTable);
       }
       else
       {
         const temp = [];
+        const temp1 = [];
         for(let i= 0; i < filterTable.length; i++)
         {
           if(filterTable[i].risk_level.includes(risk))
@@ -272,7 +274,17 @@ const ascCompletedSortDate = () => {
             temp.push(filterTable[i]);
           }
         }
+
+        for(let i= 0; i < filterCompTable.length; i++)
+        {
+          if(completedTable[i].risk_level.includes(risk))
+          {
+            temp1.push(filterCompTable[i]);
+          }
+        }
+
         setfilterTable(temp);
+        setFilterCompTable(temp1);
       }
     }
     filtering();
@@ -326,10 +338,24 @@ const ascCompletedSortDate = () => {
 
     const fetchTableData = async () => {
       try{
-        const usertable = await fetch('pending.json');
+        const usertable = await fetch('details.json');
         const userdata = await usertable.json();
-        setPendingTable(userdata);
-        setfilterTable(userdata);
+
+        const pendingtable = [];
+        const completedtable = [];
+
+        userdata.forEach(detail => {
+          if(detail.tab === "pending")
+            pendingtable.push(detail);
+          else
+            completedtable.push(detail);
+        });
+
+        setPendingTable(pendingtable);
+        setfilterTable(pendingtable);
+
+        setCompletedTable(completedtable);
+        setFilterCompTable(completedtable);
       }
       catch(err){
         console.log(err.msg);
@@ -338,24 +364,7 @@ const ascCompletedSortDate = () => {
         console.log('finally');
       }
     }
-
-    const fetchCompletedData = async () => {
-      try{
-        const usertable = await fetch('completed.json');
-        const userdata = await usertable.json();
-        setCompletedTable(userdata);
-        setFilterCompTable(userdata);
-      }
-      catch(err){
-        console.log(err.msg);
-      }
-      finally{
-        console.log('finally');
-      }
-    }
-
     fetchTableData();
-    fetchCompletedData();
 
   },[])
 

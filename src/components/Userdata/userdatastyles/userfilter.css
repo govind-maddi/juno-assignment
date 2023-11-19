@@ -55,6 +55,9 @@ li{
     margin:4px;
     /* background-color:rgba(70, 67, 238, 0.1); */
 }
+.filter_select_action > ul > li:hover{
+    background-color: rgba(70, 67, 238, 0.1);
+}
 .sort_select_icon{
     transform: rotate(180deg);
     display: flex;

@@ -34,7 +34,7 @@ function Navbar() {
 
     <nav className={ menuFlag ? 'nav_cont_visible' : 'nav_cont_hide' } >
 
-      <figure id='nav_logo_cont' style={{visibility:'hidden'}}>
+      <figure id='nav_logo_cont'>
         <img src={Logo} alt="Logo"/>
       </figure>
 

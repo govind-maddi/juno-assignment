@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 
 import './compstyles/header.css';
 
-import { SetPendingTab,SetCompletedTab } from './Layout';
+import { SetPendingTab,SetCompletedTab, SetLayoutDarken } from './Layout';
 
 function Header() {
 
@@ -13,6 +13,10 @@ function Header() {
 
   const setPendingTab = useContext(SetPendingTab);
   const setCompletedTab = useContext(SetCompletedTab);
+
+  const setLayoutDarken = useContext(SetLayoutDarken);
+
+  const close_box_count = useRef(0);
 
   const handleTab1 = () => {
     setHeaderTab1Flag(true);
@@ -31,6 +35,16 @@ function Header() {
   useEffect(() => {
     setCompletedTab(headerTab2Flag);
   },[ headerTab2Flag ]);
+
+  useEffect(() => {
+    if(dialogflag)
+    {
+      setLayoutDarken(true);
+    }
+    else{
+      setLayoutDarken(false);
+    }
+  },[dialogflag])
 
   return (
     <div id='header_cont'>
@@ -88,12 +102,12 @@ function Header() {
           <input type="text" className='dialog_input'/>
         </section>
         <section id='fileuar'>
-          <article style={{fontSize:'14px'}}>Want To File An UAR</article>
+          <article>Want To File An UAR</article>
           <article>
             <input type="radio" name="" id="" />
-            <label htmlFor="" style={{fontSize:'14px',}}>Yes</label>
+            <label htmlFor="" style={{fontSize:'14px',marginLeft:'5px'}}>Yes</label>
             <input type="radio" name="" id="" />
-            <label htmlFor="" style={{fontSize:'14px',}}>No</label>
+            <label htmlFor="" style={{fontSize:'14px',marginLeft:'5px'}}>No</label>
           </article>
         </section>
         <section>

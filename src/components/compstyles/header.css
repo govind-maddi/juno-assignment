@@ -74,35 +74,41 @@
 #dialog_box{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     background-color: #ffffff;
     z-index: 10;
-    width: 400px;
+    width: 350px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
     row-gap: 10px;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    border-radius: 20px;
 }
 #closeicondialog{
     width: 20px;
     height: 20px;
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 #closeicondialog > svg{
     fill: var(--theme);
+    width: 100%;
 }
 #fileuar{
     display: flex;
     margin-top: 4px;
+
 }
 #fileuar > article{
-    font-size: 16px;
-    margin-right: 20px;
+    font-size: 12px;
+    margin-right: 40px;
 }
 #fileuar > article > label{
     margin-right: 10px;
@@ -110,16 +116,19 @@
 .dialog_input{
     box-sizing: border-box;
     width: 100%;
+    margin-top: 2px;
 }
 #textarea{
     width: 100%;
     box-sizing: border-box;
     resize: none;
+    height: 70px;
 }
 #radioclose{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
 #radiocharge{
     display: flex;
@@ -140,6 +149,7 @@
 .labels{
     font-size: 14px;
     color: var(--contentsecondary);
+    margin-bottom: 5px;
 }
 @media screen and ( max-width: 768px ) {
     .headerbtn{
@@ -147,5 +157,38 @@
     }
     #header_cont > header{
         font-size: 20px;
+        margin-left: 20px;
+    }
+    #header_actions{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #dialog_box{
+        width: 300px;
+    }
+    #fileuar > article{
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+    #dialog_box{
+        width: 250px;
+    }
+    #fileuar > article{
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    #dialogbtn{
+        border: none;
+        background-color: var(--theme);
+        font-size: 12px;
+        padding: 8px 15px;
+        color: #ffffff;
+        border-radius: 5px;
     }
 }
